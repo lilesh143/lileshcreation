@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Features - Lilesh Creation</title>
+    <style>
+        .navbar {
+            background-color: rgb(115 28 198);
+        }
+        
+        .color1 {
+            background-color: #3d0076;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .col-lg-9 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        #bg1 {
+            background: url(../png/lilesh.png);
+            /* background-image: url(img_girl.jpg); */
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-size: cover;
+            height: 36vh;
+            border-radius: 25rem;
+        }
+        
+        .container-sm h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .container-sm h4 {
+            text-align: center;
+            color: rgb(150, 150, 150);
+        }
+        
+        .container-sm {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        /* may be footer  */
+        
+        .row {
+            /* background-color: brown; */
+            display: flex;
+            justify-content: center;
+        }
+        
+        .row img {
+            width: 8vw;
+        }
+        
+        .col-sm-4 {
+            margin: 20px auto;
+        }
+        
+        .col-sm-3 {
+            text-align: center;
+            margin: 30px 0;
+            padding: 40px 0px;
+            /* background-color: blanchedalmond; */
+            /* border-left: 2px solid black; */
+        }
+        
+        .col-sm-3 a:link {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .col-sm-3 a:hover {
+            color: cornflowerblue;
+            cursor: pointer;
+        }
+        
+        .col-sm-3 a {
+            font-weight: 1000;
+            text-shadow: 1px 1px 1px black;
+            transition: color 1s;
+            font-family: sans-serif;
+            color: white;
+        }
+        
+        .col-lg-3 {
+            margin: 30px auto;
+            text-align: center;
+            /* background-color: blueviolet; */
+            /* text-align: center; */
+        }
+        
+        .col-lg-3 img {
+            width: 30px;
+            display: inline;
+            margin: 0 5px 12px 0;
+        }
+        
+        .col-lg-3 a {
+            text-decoration: none;
+            /* font-weight: bold; */
+            color: white;
+            /* width: 10px; */
+            display: inline-flex;
+            /* margin-bottom: 3px; */
+        }
+        
+        .col-lg-4 {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .right {
+            margin: 30px auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            /* background-color: blueviolet; */
+            /* text-align: center; */
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        #form {
+            width: inherit;
+        }
+        
+        #feature {
+            width: 100%;
+            z-index: 2;
+        }
+        
+        .text-center {
+            z-index: 1;
+        }
+        
+        .flex img {
+            width: 47vw;
+            float: right;
+        }
+        
+        .align {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            flex-wrap: wrap;
+        }
+        
+        .foot {
+            /* width: 100vw; */
+            margin: auto;
+        }
+        
+        @media only screen and (max-width:1000px) {
+            .row h1 {
+                /* font-weight: initial; */
+                font-size: initial;
+            }
+            .info {
+                margin-left: auto;
+            }
+            .flex img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Lilesh Creation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/feature">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/feature">Web Designing</a></li>
+                        <li><a class="dropdown-item" href="/development">Web Development</a></li>
+                        <li><a class="dropdown-item" href="#">UIUX</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="container-fluid row color1">
+        <div class="col-lg-9">
+            <h1>Let's build together</h1>
+            <h2>Contact us</h2>
+        </div>
+        <div class="col-lg-3 " id="bg1">
+        </div>
+    </div>
+    <div class="container-sm">
+        <div class="row ">
+            <div class="col-sm-3 bg-secondary">
+                <h1> <a href="/feature">Web Designing</a> </h1>
+            </div>
+            <div class="col-sm-3 border-top border-bottom border-info">
+                <h1> <a href="/development">Web Development</a> </h1>
+            </div>
+            <div class="col-sm-3 border-top border-bottom border-end border-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Coming Soon">
+                <h1> <a href="">UIUX</a> </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 three">
+                <img id="feature" src="../svg/undraw_Growth_analytics_re_pyxf.svg" alt="img">
+            </div>
+            <div class="col-sm-6 align">
+                <h3>Boost your business in online mode. Get lime light from all over the Internet</h3>
+                <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development. Web design used to be focused on designing websites
+                    for desktop browsers; however, since the mid-2010s, design for mobile and tablet browsers has become ever-increasingly important.</p>
+            </div>
+            <div class="col-sm-6 align">
+                <h3>We will design what you exactly want, fully customize portfolio for your business</h3>
+                <p>A web designer works on the appearance, layout, and, in some cases, content of a website. Appearance, for instance, relates to the colors, font, and images used. Layout refers to how information is structured and categorized. A good web
+                    design is easy to use, aesthetically pleasing, and suits the user group and brand of the website. Many webpages are designed with a focus on simplicity, so that no extraneous information and functionality that might distract or confuse
+                    users appears. </p>
+            </div>
+            <div class="col-sm-3 three">
+                <img id="feature" src="../svg/undraw_Customer_survey_re_v9cj.svg" alt="img">
+            </div>
+        </div>
+    </div>
+    <div class="container-sm">
+        <div class="row mx-auto">
+            <div class="col-sm-4">
+                <ul class="feature">
+                    <h4>Features</h4>
+                    <li>Best in class look</li>
+                    <li>Fast loading</li>
+                    <li>Affordable pricing</li>
+                    <li>Professional look</li>
+                    <li>Free Updates</li>
+                    <li>Lifetime maintenance</li>
+                    <li>24*7 Helpline</li>
+                    <li>Fully functional website</li>
+                    <li>No downtime</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h4>Add-Ons</h4>
+                <p> We are always with you after the completion of the project with friendly manner, if you want any help regarding any small technical problem you can connect to us</p>
+                <p>"A Profession looking Portfoilo website is MUST for every bussiness. We should understand the professionalism in this modern era"<br>
+                    <p>-ModernBusiness.com</p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid flex ">
+        <div class="info text-center my-3">
+            <h3>We will design your website for your business. A perfect all rounder, professional looking site.</h3>
+            <p>The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing markup. Web design partially overlaps web engineering in the broader scope of web development.</p>
+            <button class="btn btn-primary">Sign In</button>
+            <button class="btn btn-secondary" href="/contact">Contact Us </button>
+        </div>
+        <div>
+            <img src="../svg/design.svg" alt="">
+        </div>
+    </div>
+    <div class="container-fluid row bg-secondary foot ">
+        <div class="col-lg-3 text-light ">
+            <h4>Connect with us</h4>
+
+            <a href="https://www.facebook.com/lilesh.bawane.5 "> <img href="https://www.facebook.com/lilesh.bawane.5 " src="../png/facebook (1).png " alt=" ">Facebook</a href=" "> <br>
+            <a href="https://www.instagram.com/lilesh143/ ">
+                <img href="https://www.instagram.com/lilesh143/ " src="../png/instagram.png " alt=" "> Instagram
+            </a> <br>
+            <a href="https://twitter.com/lilesh143 ">
+                <img href="https://twitter.com/lilesh143 " src="../png/twitter.png " alt=" "> Twitter
+            </a> <br>
+            <a href="https://in.linkedin.com/in/lilesh-bawane-131145210 ">
+                <img href="https://in.linkedin.com/in/lilesh-bawane-131145210 " src="../png/linkedin.png " alt=" "> Linkedin
+            </a><br>
+            <a href="https://www.fiverr.com/lilesh_creation ">
+                <img href="https://www.fiverr.com/lilesh_creation " src="../png/fiverr.png " alt=" "> Fiverr
+            </a>
+        </div>
+        <div class="col-lg-3 col-lg-4 ">
+            <h7> All rights reserved by @Lilesh_Creation 2021-2022. This is an original work of Lilesh Creation with some attribute given beside. Thanks for visiting. </h7>
+        </div>
+        <div class="right col-lg-3 text-light ">
+            <h4>Special Thanks</h4>
+            <a href="https://getbootstrap.com/ ">Bootstrap</a> <br>
+            <a href="https://www.flaticon.com/ ">Flaticons</a> <br>
+            <a href="https://www.w3schools.com/ ">W3Schools</a> <br>
+            <a href="https://unsplash.com/ ">Unsplashed</a> <br>
+            <a href="https://www.codewithharry.com/ ">CodeWithHarry</a>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+
+    <script src="../backend/tooltip.js"></script>
+
+    <script type="commonjs" defer src="/app.js"></script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>

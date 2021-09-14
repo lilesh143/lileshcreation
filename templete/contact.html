@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Lilesh Creation - Contact Us</title>
+    <style>
+        .navbar {
+            background-color: rgb(115 28 198);
+        }
+        
+        .color1 {
+            background-color: #3d0076;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .col-lg-9 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        #bg1 {
+            background: url(../png/lilesh.png);
+            /* background-image: url(img_girl.jpg); */
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-size: cover;
+            height: 36vh;
+            border-radius: 25rem;
+        }
+        
+        .container-sm h1 {
+            text-align: center;
+        }
+        
+        .container-sm {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        /* may b footer  */
+        
+        #gray3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 5rem;
+        }
+        
+        .row img {
+            width: 8vw;
+        }
+        
+        .col-sm-4 {
+            margin-top: 20px;
+        }
+        
+        #gray4 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .col-sm-3 {
+            margin: 20px;
+            padding: 40px 0px;
+            border-left: 2px solid black;
+        }
+        
+        .col-sm-3 h1 {
+            font-weight: 1000;
+            text-shadow: 1px 1px 1px black;
+            transition: color 1s;
+            font-family: sans-serif;
+            color: white;
+        }
+        
+        .col-sm-3 h1:hover {
+            color: cornflowerblue;
+            cursor: pointer;
+        }
+        
+        .col-lg-3 {
+            margin: 30px auto;
+            text-align: center;
+            /* background-color: blueviolet; */
+            /* text-align: center; */
+        }
+        
+        .col-lg-3 img {
+            width: 30px;
+            display: inline;
+            margin: 0 5px 12px 0;
+        }
+        
+        .col-lg-3 a {
+            text-decoration: none;
+            /* font-weight: bold; */
+            color: white;
+            /* width: 10px; */
+            display: inline-flex;
+            /* margin-bottom: 3px; */
+        }
+        
+        .col-lg-4 {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .right {
+            margin: 30px auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            /* background-color: blueviolet; */
+            /* text-align: center; */
+            flex-direction: column;
+            justify-content: center;
+        }
+        /* *
+        *
+        * Form Stye
+        *
+        * */
+    </style>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Lilesh Creation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/feature">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/feature">Web Designing</a></li>
+                        <li><a class="dropdown-item" href="/development">Web Development</a></li>
+                        <li><a class="dropdown-item" href="">UIUX</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="container-fluid row color1">
+        <div class="col-lg-9">
+            <h1>Let's build together</h1>
+            <h2>Contact us</h2>
+        </div>
+        <div class="col-lg-3 " id="bg1">
+        </div>
+    </div>
+    <div class="container-sm">
+        <h1>Enter Your Details</h1>
+        <h5>We will reach you soon</h5>
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="Type here" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationDefault02" placeholder="Type here" required>
+            </div>
+            <div class="col-md-4">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+
+            <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">State</label>
+                <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Choose...</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                <option value="Daman and Diu">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+                </select>
+            </div>
+            <div class="col-md-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <label for="validationDefault05" class="form-label">Pin Code</label>
+                <input type="text" class="form-control" id="validationDefault05" required>
+            </div>
+            <div class="col-12">
+                <div class="form-check ">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" data-bs-toggle="modal" data-bs-target="#exampleModal" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                  Agree to terms and conditions
+                </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+        <!-- Button trigger modal
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+        </button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Thanks for sharing your details, please click on Submit button</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        We will NEVER share your details with anyone.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-sm">
+        <h1>My Details</h1>
+        <div class="container-fluid inline">
+            <h5>Name</h5>
+            <p>Lilesh Bawane</p>
+            <h5>Profession</h5>
+            <p>Web Designer and Developer</p>
+            <h5>Address</h5>
+            <p class="user-select-all">Ashtabhuja ward, By pass road, Near Poddar Public School. Chandrapur 442-401 </p>
+            <h5>Phone</h5>
+            <p class="user-select-all">9325926559</p>
+            <h5>Email</h5>
+            <p>lileshrocking@gmail.com</p>
+            <h6>Don’t hesitate to contact us. We are always there to help you out. Your next move decide your future, please let us know if you are interested in building your own site.</h6>
+        </div>
+    </div>
+    <div class="container-fluid row bg-secondary foot">
+        <div class="col-lg-3 text-light">
+            <h4>Connect with us</h4>
+
+            <a href="https://www.facebook.com/lilesh.bawane.5"> <img href="https://www.facebook.com/lilesh.bawane.5" src="../png/facebook (1).png" alt="">Facebook</a href=""> <br>
+            <a href="https://www.instagram.com/lilesh143/">
+                <img href="https://www.instagram.com/lilesh143/" src="../png/instagram.png" alt=""> Instagram
+            </a> <br>
+            <a href="https://twitter.com/lilesh143">
+                <img href="https://twitter.com/lilesh143" src="../png/twitter.png" alt=""> Twitter
+            </a> <br>
+            <a href="https://in.linkedin.com/in/lilesh-bawane-131145210">
+                <img href="https://in.linkedin.com/in/lilesh-bawane-131145210" src="../png/linkedin.png" alt=""> Linkedin
+            </a><br>
+            <a href="https://www.fiverr.com/lilesh_creation">
+                <img href="https://www.fiverr.com/lilesh_creation" src="../png/fiverr.png" alt=""> Fiverr
+            </a>
+        </div>
+        <div class="col-lg-3 col-lg-4">
+            <h7> All rights reserved by @Lilesh_Creation 2021-2022. This is an original work of Lilesh Creation with some attribute given beside. Thanks for visiting. </h7>
+        </div>
+        <div class="right col-lg-3 text-light">
+            <h4>Special Thanks</h4>
+            <a href="https://getbootstrap.com/">Bootstrap</a> <br>
+            <a href="https://www.flaticon.com/">Flaticons</a> <br>
+            <a href="https://www.w3schools.com/">W3Schools</a> <br>
+            <a href="https://unsplash.com/">Unsplashed</a> <br>
+            <a href="https://www.codewithharry.com/">CodeWithHarry</a>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="../backend/tooltip.js"></script>
+
+    <script type="commonjs" defer src="/app.js"></script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

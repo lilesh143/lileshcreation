@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Lilesh Creation</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        /* .carousel-inner {
+            height: 650px;
+        } */
+        
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        .carousel-inner {
+            background-color: black;
+        }
+        
+        .carousel-inner img {
+            height: 700px;
+            opacity: 0.5;
+        }
+        
+        .carousel-item p {
+            font-size: x-large;
+        }
+        
+        @media only screen and (max-width:900px) {
+            .carousel-inner img {
+                height: auto;
+            }
+            .carousel-item p {
+                font-size: initial;
+            }
+        }
+        
+        .mobile {
+            background-color: white;
+            width: 300px;
+            height: 575px;
+            margin-bottom: 40px;
+            /* border: 2px solid black; */
+            text-align: center;
+            padding: 34px;
+            border-radius: 30px;
+            position: relative;
+            left: 50px;
+            top: 35px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            box-shadow: 7px 14px 17px 2px;
+        }
+        
+        #one {
+            z-index: 2;
+            display: inline-flex;
+        }
+        
+        #two {
+            display: inline-flex;
+            position: relative;
+            top: 4rem;
+            /* left: 20rem; */
+            left: 1rem;
+            padding: 50px;
+            z-index: 1;
+            background-color: rgb(242 242 242);
+        }
+        
+        .mobile p {
+            font-size: small;
+        }
+        
+        .mobile h5 {
+            font-family: cursive;
+            color: rgb(194, 47, 47);
+            font-weight: bolder;
+        }
+        
+        .divider1 {
+            /* width: 49%; */
+            display: flex;
+        }
+        
+        .divider2 {
+            width: 100%;
+            float: right;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 30px;
+            text-align: right;
+        }
+        
+        .divider2 h1 {
+            /* float: right; */
+            color: white;
+            /* font-size: xxx-large; */
+            text-align: justify;
+        }
+        
+        .divider3 {
+            /* width: 100%; */
+            /* float: right; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* padding-left: 30px; */
+            text-align: left;
+            padding: 2rem;
+        }
+        
+        .divider3 h1 {
+            /* float: right; */
+            color: black;
+            /* font-size: xxx-large; */
+            text-align: justify;
+        }
+        
+        #gray {
+            background-color: rgb(207 207 207);
+            /* height: 90vh; */
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+        }
+        
+        #gray2 {
+            padding-top: 5rem;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+        .divider4 img {
+            width: 40vw;
+        }
+        
+        #gray3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 5rem;
+        }
+        
+        .row img {
+            width: 8vw;
+        }
+        
+        .col-sm-4 {
+            margin-top: 20px;
+        }
+        
+        #gray4 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .col-sm-3 a:link {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .col-sm-3 a:hover {
+            color: cornflowerblue;
+            cursor: pointer;
+        }
+        
+        .col-sm-3 a {
+            font-weight: 1000;
+            text-shadow: 1px 1px 1px black;
+            transition: color 1s;
+            font-family: sans-serif;
+            color: white;
+        }
+        
+        .col-sm-3 {
+            margin: 20px;
+            padding: 40px 0px;
+            border-left: 2px solid black;
+        }
+        /* .col-sm-3 h1:hover {
+            color: cornflowerblue;
+            cursor: pointer;
+        } */
+        
+        .col-lg-3 {
+            margin: 30px auto;
+            text-align: center;
+            /* background-color: blueviolet; */
+            /* text-align: center; */
+        }
+        
+        .col-lg-3 img {
+            width: 30px;
+            display: inline;
+            margin: 0 5px 12px 0;
+        }
+        
+        .col-lg-3 a {
+            text-decoration: none;
+            /* font-weight: bold; */
+            color: white;
+            /* width: 10px; */
+            display: inline-flex;
+            /* margin-bottom: 3px; */
+        }
+        
+        .col-lg-4 {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .right {
+            margin: 30px auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            /* background-color: blueviolet; */
+            /* text-align: center; */
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        @media only screen and (max-width:1000px) {
+            .mobile {
+                background-color: white;
+                width: 49vw;
+                height: 49vh;
+                left: 0;
+            }
+            .mobile p {
+                font-size: xx-small;
+            }
+            .mobile h5 {
+                font-size: initial;
+                font-family: cursive;
+                color: rgb(194, 47, 47);
+                font-weight: bolder;
+            }
+            .mobile h4 {
+                font-size: initial;
+            }
+            #gray {
+                background-color: rgb(207 207 207);
+                display: flex;
+                flex-direction: column;
+            }
+            #two {
+                padding: 20px;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Lilesh Creation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/feature">Feature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="/feature">Web Designing</a></li>
+                            <li><a class="dropdown-item" href="/development">Web Development</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="tooltip">UIUX</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h1>Welcome to Lilesh Creation</h1>
+                    <p>Want a professional looking website for your business? <br> Your are at right place.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h1>We Design</h1>
+                    <p>We will design your website as you want. Fully customise and professional looking layouts.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h1>Deploy and Development</h1>
+                    <p>We will develop and maintain your site on the server. No downtime for sure.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+    </div>
+
+    <div class="container-lg" id="gray">
+        <div class="divider1">
+            <div class="mobile" id="one">
+                <h5>Lilesh Creation</h5>
+                <h4>We design & develop with love and perfection</h4>
+                <p>We provide better services with cheaper rates. <br> Enjoy our service and let us work for you</p>
+                <button type="button" class="btn btn-primary">Let's Go</button>
+                <p>Be professional build your site</p>
+            </div>
+            <div class="mobile" id="two">
+                <h5>Lilesh Creation</h5>
+                <h4>Full-stack developer. We will Develop and handle your website by ourself. </h4>
+                <p>Hando-ver all your backend work to us <br> All your online work at one place.</p>
+                <button type="button" class="btn btn-primary">Let's Go</button>
+                <p>Be professional build your site</p>
+            </div>
+        </div>
+        <div class="divider2">
+            <h1>Build your own <br> website <br> and <br> bring your business <br> online</h1>
+        </div>
+    </div>
+    <div class="container" id="gray2">
+        <div class="divider3" data-aos="fade-right">
+            <h1>Taking your <br> business <br> online <br> is one of the <br> most important <br> part of professionalism.
+            </h1>
+        </div>
+        <div class="divider4" data-aos="fade-left">
+            <img src="../svg/Design stats-bro.svg" alt="">
+        </div>
+    </div>
+    <div class="container-fluid" id="gray3">
+        <div class="col-sm-8">
+            <h6 class="fst-normal text-secondary">Hey there, my name is Lilesh Bawane. I am a Computer Science Engineering student who likes to design and develop websites. My main goal is to provide neat and clean design with seamless functionality by coding good backend. Yes I am a beginner
+                at web development by I will try my best for your project. I will use HTML, CSS and JavaScript for front-end obviously, Bootstrap for some components, JavaScript as backend language (Node Js), Express as a backend framework and MongoDb
+                as a database.</h6>
+        </div>
+        <div class="col-sm-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col"><img src="../png/1.png" alt=""></div>
+                    <div class="col"><img src="../png/2.png" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col"><img src="../png/3.png" alt=""></div>
+                    <div class="col"><img src="../png/4.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-primary m-5 mb-1">
+        Let me help you.
+    </h2>
+    <div class="container-fluid" id="gray4">
+        <div class="col-sm-3">
+            <h1> <a href="/home">OUR WORK</a> </h1>
+        </div>
+        <div class="col-sm-3">
+            <h1> <a href="/contact">CONTACT US</a> </h1>
+        </div>
+        <div class="col-sm-3">
+            <h1> <a href="/home"> APP DEVELOPMENT</a></h1>
+            <h5 class="text-secondary">coming soon</h5>
+        </div>
+    </div>
+
+    <div class="container-fluid row bg-secondary foot">
+        <div class="col-lg-3 text-light">
+            <h4>Connect with us</h4>
+
+            <a href="https://www.facebook.com/lilesh.bawane.5"> <img href="https://www.facebook.com/lilesh.bawane.5" src="../png/facebook (1).png" alt="">Facebook</a href=""> <br>
+            <a href="https://www.instagram.com/lilesh143/">
+                <img href="https://www.instagram.com/lilesh143/" src="../png/instagram.png" alt=""> Instagram
+            </a> <br>
+            <a href="https://twitter.com/lilesh143">
+                <img href="https://twitter.com/lilesh143" src="../png/twitter.png" alt=""> Twitter
+            </a> <br>
+            <a href="https://in.linkedin.com/in/lilesh-bawane-131145210">
+                <img href="https://in.linkedin.com/in/lilesh-bawane-131145210" src="../png/linkedin.png" alt=""> Linkedin
+            </a><br>
+            <a href="https://www.fiverr.com/lilesh_creation">
+                <img href="https://www.fiverr.com/lilesh_creation" src="../png/fiverr.png" alt=""> Fiverr
+            </a>
+        </div>
+        <div class="col-lg-3 col-lg-4">
+            <h7> All rights reserved by @Lilesh_Creation 2021-2022. This is an original work of Lilesh Creation with some attribute given beside. Thanks for visiting. </h7>
+        </div>
+        <div class="right col-lg-3 text-light">
+            <h4>Special Thanks</h4>
+            <a href="https://getbootstrap.com/">Bootstrap</a> <br>
+            <a href="https://www.flaticon.com/">Flaticons</a> <br>
+            <a href="https://www.w3schools.com/">W3Schools</a> <br>
+            <a href="https://unsplash.com/">Unsplashed</a> <br>
+            <a href="https://www.codewithharry.com/">CodeWithHarry</a>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="../backend/tooltip.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script type="commonjs" defer src="/app.js"></script>
+
+
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

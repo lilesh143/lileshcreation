@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Development - Lilesh Creation</title>
+    <style>
+        .navbar {
+            background-color: rgb(115 28 198);
+        }
+        
+        .color1 {
+            background-color: #3d0076;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .col-lg-9 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        #bg1 {
+            background: url(../png/lilesh.png);
+            /* background-image: url(img_girl.jpg); */
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-size: cover;
+            height: 36vh;
+            border-radius: 25rem;
+        }
+        
+        .container-sm h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .grayh4 {
+            text-align: center;
+            color: rgb(150, 150, 150);
+        }
+        
+        .container-sm {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        
+        #gray3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 5rem;
+        }
+        
+        .row {
+            /* background-color: brown; */
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        
+        .row img {
+            width: 8vw;
+        }
+        
+        .col-sm-4 {
+            margin: 20px auto;
+        }
+        
+        #gray4 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .col-sm-3 {
+            text-align: center;
+            margin: 30px 0;
+            padding: 40px 0px;
+            /* background-color: blanchedalmond; */
+            /* border-left: 2px solid black; */
+        }
+        
+        .col-sm-3 h1 {
+            font-weight: 1000;
+            text-shadow: 1px 1px 1px black;
+            transition: color 1s;
+            font-family: sans-serif;
+            color: white;
+        }
+        
+        .col-sm-3 h1:hover {
+            color: cornflowerblue;
+            cursor: pointer;
+        }
+        
+        .height50 {
+            height: 21rem;
+            overflow: hidden;
+        }
+        
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+        
+        .lines {
+            position: relative;
+            bottom: 13rem;
+        }
+        
+        .flex img {
+            /* position: relative; */
+            width: 44%;
+            /* top: 13rem; */
+        }
+        /* may be footer  */
+        
+        #gray3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 5rem;
+        }
+        
+        .row {
+            /* background-color: brown; */
+            display: flex;
+            justify-content: center;
+        }
+        
+        .row img {
+            width: 8vw;
+        }
+        
+        .col-sm-4 {
+            margin: 20px auto;
+        }
+        
+        #gray4 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .col-sm-3 {
+            text-align: center;
+            margin: 30px 0;
+            padding: 40px 0px;
+            /* background-color: blanchedalmond; */
+            /* border-left: 2px solid black; */
+        }
+        
+        .col-sm-3 a:link {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .col-sm-3 a:hover {
+            color: cornflowerblue;
+            cursor: pointer;
+        }
+        
+        .col-sm-3 a {
+            font-weight: 1000;
+            text-shadow: 1px 1px 1px black;
+            transition: color 1s;
+            font-family: sans-serif;
+            color: white;
+        }
+        
+        .col-lg-3 {
+            margin: 30px auto;
+            text-align: center;
+            /* background-color: blueviolet; */
+            /* text-align: center; */
+        }
+        
+        .col-lg-3 img {
+            width: 30px;
+            display: inline;
+            margin: 0 5px 12px 0;
+        }
+        
+        .col-lg-3 a {
+            text-decoration: none;
+            /* font-weight: bold; */
+            color: white;
+            /* width: 10px; */
+            display: inline-flex;
+            /* margin-bottom: 3px; */
+        }
+        
+        .col-lg-4 {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .right {
+            margin: 30px auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            /* background-color: blueviolet; */
+            /* text-align: center; */
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        @media only screen and (max-width: 1000px) {
+            .row h1 {
+                /* font-weight: initial; */
+                font-size: initial;
+            }
+            .info {
+                margin-left: auto;
+            }
+            .height50 {
+                height: auto;
+                overflow: hidden;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .flex {
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+            }
+            .lines {
+                position: relative;
+                bottom: 0;
+            }
+            .flex img {
+                width: 75%;
+            }
+        }
+    </style>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Lilesh Creation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/feature">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/feature">Web Designing</a></li>
+                        <li><a class="dropdown-item" href="/development">Web Development</a></li>
+                        <li><a class="dropdown-item" href="">UIUX</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="container-fluid row color1">
+        <div class="col-lg-9">
+            <h1>Let's build together</h1>
+            <h2>Contact us</h2>
+        </div>
+        <div class="col-lg-3 " id="bg1">
+        </div>
+    </div>
+    <div class="container-sm">
+        <div class="row ">
+            <div class="col-sm-3 border-start border-top border-bottom border-info">
+                <h1> <a href="/feature">Web Designing</a> </h1>
+            </div>
+            <div class="col-sm-3 bg-secondary border-top border-bottom border-info">
+                <h1> <a href="/development">Web Development</a> </h1>
+            </div>
+            <div class="col-sm-3 border-top border-bottom border-end border-info">
+                <h1> <a href="">UIUX</a> </h1>
+            </div>
+        </div>
+        <div class="row my-5">
+            <h4 class="grayh4">Our server-site utilities</h4>
+            <h2 class="text-center">JavaScript | NodeJs | Express | Apache | Nginx | PM2</h2>
+        </div>
+        <div class="card my-5 bg-dark text-white height50">
+            <img src="../img/dev.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h4 class="card-title">Backend Development</h4>
+                <p class="card-text">We have to manage your app in Backend to provide seemless experience to your users. Our responsibilities to handle the traffic on your website.</p>
+                <p class="card-text">Don't worry we are always there to help you</p>
+            </div>
+        </div>
+        <div class="card my-5 bg-dark text-white height50">
+            <img src="../img/code.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h4 class="card-title">Backend Development</h4>
+                <p class="card-text">We will develop, deploy and manage your server-side coding. We will handle your fully featured web-site.</p>
+                <p class="card-text">Front-end and Back-end work at one place. #LileshCreation</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center text-white bg-dark">All in one</h1>
+        <p class="text-center">If you want your website design, develop and deploy at one place you are at right place.</p>
+        <div class="flex">
+
+            <div class="lines">
+                <h2>Don't worry will code your backend using one of the best language and utilities.</h2>
+                <p>Hosting and Domain are from your side, you have to purchase Domain and Hosting on your comfortable prices and we will Deploy website coding and files on server an link you Domain to your hosting server.</p>
+            </div>
+            <img src="../svg/Signing a contract-rafiki.png" alt="">
+        </div>
+    </div>
+    <div class="container text-center my-3">
+        <h3>Fully customize website at cheap rates</h3>
+        <p>We will design your landing page for free if you don't like it you can cancel you project at any time.</p>
+        <h6>Let us give you a trial for free</h6>
+        <button class="btn btn-primary">Contact Us</button>
+    </div>
+    <div class="container-fluid row bg-secondary foot">
+        <div class="col-lg-3 text-light">
+            <h4>Connect with us</h4>
+
+            <a href="https://www.facebook.com/lilesh.bawane.5"> <img href="https://www.facebook.com/lilesh.bawane.5" src="../png/facebook (1).png" alt="">Facebook</a href=""> <br>
+            <a href="https://www.instagram.com/lilesh143/">
+                <img href="https://www.instagram.com/lilesh143/" src="../png/instagram.png" alt=""> Instagram
+            </a> <br>
+            <a href="https://twitter.com/lilesh143">
+                <img href="https://twitter.com/lilesh143" src="../png/twitter.png" alt=""> Twitter
+            </a> <br>
+            <a href="https://in.linkedin.com/in/lilesh-bawane-131145210">
+                <img href="https://in.linkedin.com/in/lilesh-bawane-131145210" src="../png/linkedin.png" alt=""> Linkedin
+            </a><br>
+            <a href="https://www.fiverr.com/lilesh_creation">
+                <img href="https://www.fiverr.com/lilesh_creation" src="../png/fiverr.png" alt=""> Fiverr
+            </a>
+        </div>
+        <div class="col-lg-3 col-lg-4">
+            <h7> All rights reserved by @Lilesh_Creation 2021-2022. This is an original work of Lilesh Creation with some attribute given beside. Thanks for visiting. </h7>
+        </div>
+        <div class="right col-lg-3 text-light">
+            <h4>Special Thanks</h4>
+            <a href="https://getbootstrap.com/">Bootstrap</a> <br>
+            <a href="https://www.flaticon.com/">Flaticons</a> <br>
+            <a href="https://www.w3schools.com/">W3Schools</a> <br>
+            <a href="https://unsplash.com/">Unsplashed</a> <br>
+            <a href="https://www.codewithharry.com/">CodeWithHarry</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="../backend/tooltip.js"></script>
+
+    <script type="commonjs" defer src="/app.js"></script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>`
